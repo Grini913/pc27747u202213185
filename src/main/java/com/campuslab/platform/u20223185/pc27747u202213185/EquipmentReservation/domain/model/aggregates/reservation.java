@@ -13,5 +13,30 @@ public class reservation {
     private equipmentBatch equipmentBatch;
     private reservationPeriod reservationPeriod;
     private status status;
-
+    public reservation(Long id, reservationCode reservationCode, laboratoryId laboratoryId, equipmentBatch equipmentBatch, reservationPeriod reservationPeriod, status status) {
+        this.id = id;
+        this.reservationCode = reservationCode;
+        this.laboratoryId = laboratoryId;
+        this.equipmentBatch = equipmentBatch;
+        this.reservationPeriod = reservationPeriod;
+        this.status = status;
+    }
+    public Long getId() {
+        return id;
+    }
+    public reservationCode getReservationCode() {
+        return reservationCode;
+    }
+    public laboratoryId getLaboratoryId() {
+        return laboratoryId;
+    }
+    public equipmentBatch getEquipmentBatch() {
+        return equipmentBatch;
+    }
+    public reservationPeriod getReservationPeriod() {
+        return reservationPeriod;
+    }
+    public status getStatus() {
+        return status;
+    }
 }
